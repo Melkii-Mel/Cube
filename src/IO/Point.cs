@@ -1,4 +1,4 @@
-﻿namespace ULTRACUBE
+﻿namespace ULTRACUBE.src.IO
 {
     internal struct Point
     {

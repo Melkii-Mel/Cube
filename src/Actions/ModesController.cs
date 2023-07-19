@@ -1,10 +1,13 @@
-﻿namespace ULTRACUBE
+﻿using ULTRACUBE.src.Cubes;
+using ULTRACUBE.src.IO;
+
+namespace ULTRACUBE.src.Actions
 {
     internal class ModesController
     {
-        private CubeLinker _linker;
-        private Cube _cube;
-        private Timer _timer = new(1000 / 60, true);
+        private readonly CubeLinker _linker;
+        private readonly Cube _cube;
+        private readonly Timer _timer = new(1000 / 60, true);
         private Autorotation? _autorotation;
         private ConsolePrinter _printer;
         public ModesController(Cube cube, Mode mode)
@@ -25,7 +28,7 @@
         {
             if (CurrentMode == Mode.Auto)
             {
-                _autorotation = new(_cube, 5, 1000 / 60, _timer);
+                _autorotation = new(_cube, 5, _timer);
                 _timer.OnTick += UpdateAutoRotation;
             }
             if (CurrentMode == Mode.RotationToCursor)

@@ -1,4 +1,6 @@
-﻿namespace ULTRACUBE
+﻿using ULTRACUBE.src.Cubes;
+
+namespace ULTRACUBE.src.IO
 {
     internal class CubeLinker
     {

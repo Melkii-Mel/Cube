@@ -1,4 +1,6 @@
-﻿namespace ULTRACUBE
+﻿using ULTRACUBE.src.Actions;
+
+namespace ULTRACUBE.src
 {
     using static ModesController;
     internal class Program

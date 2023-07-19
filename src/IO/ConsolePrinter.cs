@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace ULTRACUBE
+namespace ULTRACUBE.src.IO
 {
     internal class ConsolePrinter
     {
